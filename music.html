@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music App</title>
+
+        <!--=====CSS=====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet"type="text/css" href="CSS/mystylesheet.css"/>
+    </head>
+    <body>
+        <div class="div_main">
+            <div class="music_container">
+                <h3 id="title">Believer</h3>
+                <h4 id="artist">Imagine Dragons</h4></h2>
+                <div class="img_container">
+                    <img src="images/img1.jpg">
+                </div>
+                <audio src="Songs/Believer.mp3"></audio>
+
+                <!--=====Progress Bar=====-->
+                <div class="progressbar_container" id="progress_container">
+                    <div class="progress_duration">
+                        <div id="current_time">
+                            0:00
+                            
+                        </div>
+                        <div id="total_duration">
+                            3.36
+                        </div>
+                    </div>
+                    <div class="progress_div" id="progress_div">
+                        <div class="progress" id="progress">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--=====Controls=====-->
+                <div class="music_controls">
+                    <span class="fa fa-backward" id="prev" title="Previous"></span>
+                    <span class="fa fa-play main_button" id="play" title="Play"></span>
+                    <span class="fa fa-forward" id="next" title="Next"></span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!--=====JAVASCRIPT=====-->
+    <script src="JS/music.js"></script>
+</html>
